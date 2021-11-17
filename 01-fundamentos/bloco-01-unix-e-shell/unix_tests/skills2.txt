@@ -1,0 +1,8 @@
+Internet
+Unix
+Bash
+Programacao
+Java
+JavaScript
+HTML
+CSS
