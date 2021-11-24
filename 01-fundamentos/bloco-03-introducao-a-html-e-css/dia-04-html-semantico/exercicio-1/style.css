@@ -6,6 +6,10 @@ h3{
     text-align: center;
 }
 
+ul{
+    padding: inherit;
+}
+
 .first {
     background-color: rgb(235, 200, 84);
     font-size: 20px;
@@ -45,9 +49,9 @@ h3{
       text-align: center;
   }
 
-  .rewards{
+  .rewards li{
       list-style-type: none;
-      display: inline-block;
+      display: inline;
       text-align: center;
   }
 
