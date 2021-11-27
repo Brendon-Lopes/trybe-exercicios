@@ -1,4 +1,4 @@
-const salario = 3000;
+const salario = 1100;
 let salarioSemInss;
 let salarioFinal;
 let inss;
@@ -47,3 +47,5 @@ switch(true){
         console.log('Salário Líquido: ' + salarioFinal);
         break;
 }
+
+console.log('Valor subtraído: ' + (salario - salarioFinal));
