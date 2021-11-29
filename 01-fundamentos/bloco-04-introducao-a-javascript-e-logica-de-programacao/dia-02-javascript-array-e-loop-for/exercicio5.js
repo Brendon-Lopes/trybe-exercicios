@@ -8,8 +8,8 @@ let higherNumber = 0;
 //     }
 // } console.log(higherNumber);
 
-for(let numberElement of numbers){
-    if(higherNumber < numberElement){
-        higherNumber = numberElement;
+for(let numbersElement of numbers){
+    if(higherNumber < numbersElement){
+        higherNumber = numbersElement;
     }
 } console.log(higherNumber);
