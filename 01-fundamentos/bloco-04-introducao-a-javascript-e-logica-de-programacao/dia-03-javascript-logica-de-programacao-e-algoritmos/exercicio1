@@ -1,0 +1,69 @@
+1.
+declarar o array numbers
+criar estrutura de repetição percorrendo todo o array
+exibir cada valor do array, um por repetição.
+
+
+2.
+declarar array numbers
+declarar uma variável pra soma
+criar estrutura de repetição percorrendo todo o array
+somar os elementos do array
+exibir o valor de soma no final de tudo
+
+
+3.
+declarar array numbers
+declarar uma variável pra soma
+declarar uma variável para média aritmética, que é igual à soma dividida pelo número de elementos do array
+criar estrutura de repetição percorrendo todo o array
+somar os elementos do array
+exibir o valor da variável que contem a média aritmética
+
+
+4.
+declarar array numbers
+declarar uma variável pra soma
+declarar uma variável para média aritmética, que é igual à soma dividida pelo número de elementos do array
+criar estrutura de repetição percorrendo todo o array
+somar os elementos do array
+criar estrutura de condição
+ - se a media for maior que 20, imprimir "valor maior que 20"
+ - senão, imprimir "valor menor ou igual a 20"
+
+
+5.
+declarar array numbers
+declarar uma variavel higherNumber com valor = 0
+criar uma estrutura de repetição percorrendo o array
+checar se cada número é maior que a variavel higherNumber, se sim, será o novo valor de higherNumber
+no fim da repetição, imprimir o valor de higherNumber
+
+
+6.
+declarar array number
+declarar variável oddNumbersQuant
+criar estrutura de repetição que percorre o array
+checar se cada elemento do array divido por 2 restaria 0, se sim, adicionar +1 à variável oddNumbersQuant
+no fim da repetição, se existir pelo menos um valor ímpar, imprimir oddNumbersQuant, senão, imprimir "nenhum valor ímpar encontrado"
+
+
+7.
+declarar array numbers
+declarar variável lowerNumber que terá o valor do primeiro elemento do array
+criar estrutura de repetição percorrendo todo o array
+se o elemento for menor que lowerNumber, será o novo valor de lowerNumber
+no fim da repetição, imprimir o valor de lowerNumber
+
+
+8.
+declarar um array vazio, chamado de contagem
+criar estrutura de repetição, que vai começar do número 1, ser adicionado ao array, incrementar +1, ser adicionado ao array, e assim em diante, contanto que o valor do número seja menor que 26.
+no final da repetição, imprimir o array contagem
+
+
+9.
+declarar o array numbers
+percorrer todo o array em uma estrutura de repetição
+dividir cada elemento por 2 e imprimir o resultado
+fim da repetição
