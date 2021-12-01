@@ -1,4 +1,4 @@
-const n = 5;
+const n = 7;
 let linha = '';
 
 for(let i = 1; i <= n; i += 1){
@@ -11,7 +11,7 @@ for(let i = 1; i <= n; i += 1){
         linha += '* ';
     }
 
-    if(i < 5){
+    if(i < n){
         linha += '\n';
     }
 }
