@@ -1,4 +1,4 @@
-const n = 7;
+const n = 5;
 let linha = '';
 
 for(let i = 1; i <= n; i += 1){
