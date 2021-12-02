@@ -4,7 +4,7 @@
 // console.log(letras);
 
 function verifyPalindrome(word){
-    var reverse = word.toLowerCase().split('').reverse().join('');
+    let reverse = word.toLowerCase().split('').reverse().join('');
     if(word.toLowerCase() === reverse){
         return 'É um palíndromo'
     } else {
