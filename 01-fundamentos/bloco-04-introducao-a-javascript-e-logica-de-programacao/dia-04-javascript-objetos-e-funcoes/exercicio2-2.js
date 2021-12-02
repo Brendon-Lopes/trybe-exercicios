@@ -1,7 +1,6 @@
 function higherValueIndex (array){
 
     let higherNumber = 0;
-    let higherNumberIndex = 0;
 
     for(let i of array){
         if(i > higherNumber){
