@@ -8,13 +8,13 @@
       <p id="second-paragraph" class="paragraphs">Segundo parágrafo!</p>
     </header>
     <script>
-      document.getElementById("page-title").innerText = "O Estranho Mundo de Jack";
-      document.getElementById("second-paragraph").innerText = "Filme foda";
-      document.getElementById("subtitle").innerText = "Descrição do filme:";
+      document.querySelector("#page-title").innerText = "O Estranho Mundo de Jack";
+      document.querySelector("#second-paragraph").innerText = "Filme foda";
+      document.querySelector("#subtitle").innerText = "Descrição do filme:";
       
       window.onload=function changeColor(){
-        for(let i in document.getElementsByClassName("paragraphs")){
-          document.getElementsByClassName("paragraphs")[i].style.color = "red";
+        for(let i in document.querySelectorAll(".paragraphs")){
+          document.querySelectorAll(".paragraphs")[i].style.color = "red";
         }
       }
 
