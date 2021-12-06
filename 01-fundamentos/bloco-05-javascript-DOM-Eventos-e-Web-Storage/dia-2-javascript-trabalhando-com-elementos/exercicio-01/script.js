@@ -1,0 +1,2 @@
+document.getElementById('elementoOndeVoceEsta').parentElement.style.backgroundColor = 'green';
+document.getElementById('elementoOndeVoceEsta').firstElementChild.innerText = 'Esse é o primeiro filho do filho';
