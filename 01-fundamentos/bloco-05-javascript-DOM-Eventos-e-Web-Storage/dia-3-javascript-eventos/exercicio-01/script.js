@@ -10,6 +10,7 @@ const myWebpage = document.getElementById('my-spotrybefy');
 // 1.2. Note que uma das caixas está um pouco acima das outras. Por que isso ocorre? R: por causa da estilização direcionada a classe tech.
 
 // 2. Crie uma função que adicione a classe 'tech' ao elemento `li` quando for clicado.
+// 2.1. Deve existir apenas um elemento com a classe 'tech'. Como você faz isso?
 
 firstLi.addEventListener("click", click1);
 secondLi.addEventListener("click", click2);
@@ -33,17 +34,36 @@ function click3(){
   thirdLi.classList = 'tech';
 };
 
-// 2.1. Deve existir apenas um elemento com a classe 'tech'. Como você faz isso?
+// 3. Crie uma função que, ao digitar na caixa de texto, altere o texto do elemento com a classe 'tech';
+input.addEventListener('keyup', mudarTexto);
 
-// 3. Crie uma função que, ao digitar na caixa de texto, altere o texto do elemento
-// com a classe 'tech';
+function mudarTexto(){
+  document.querySelector('.tech').innerText = input.value;
+};
 
-// 4. Crie uma função que, ao clicar duas vezes em 'Meu top 3 do Spotrybefy', ele
-// redirecione para alguma página;
+// 4. Crie uma função que, ao clicar duas vezes em 'Meu top 3 do Spotrybefy', ele redirecione para alguma página;
 // 4.1. Que tal redirecionar para seu portifólio?
+myWebpage.addEventListener('click', redirect);
 
-// 5. Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
-// a cor do mesmo;
+function redirect(){
+  // location.href = 'https://brendon-lopes.github.io/';
+  open('https://brendon-lopes.github.io/', '_blank');
+}
+
+// 5. Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere a cor do mesmo;
+myWebpage.addEventListener('mouseover', changeColor);
+myWebpage.addEventListener('mouseleave', changeColorBack);
+
+function changeColor(){
+  myWebpage.style.color = 'green';
+  myWebpage.style.textDecoration = 'underline';
+  myWebpage.style.cursor = 'pointer';
+}
+
+function changeColorBack(){
+  myWebpage.style.color = 'white';
+  myWebpage.style.textDecoration = 'none';
+}
 
 // Segue abaixo um exemplo do uso de event.target:
 
@@ -51,8 +71,7 @@ function click3(){
 function resetText(event) {
   // O Event é passado como um parâmetro para a função.
   event.target.innerText = 'Opção reiniciada';
-  // O event possui várias propriedades, porém a mais usada é o event.target,
-  // que retorna o objeto que disparou o evento.
+  // O event possui várias propriedades, porém a mais usada é o event.target, que retorna o objeto que disparou o evento.
 }
 
 firstLi.addEventListener('dblclick', resetText);
