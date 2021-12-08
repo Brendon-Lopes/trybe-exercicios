@@ -76,3 +76,19 @@ function clickButtonFriday(){
 }
 
 document.querySelector('#btn-friday').addEventListener('click', clickButtonFriday);
+
+function zoomIn(event){
+  event.target.style.fontSize = '30px';
+}
+
+function zoomOut(event){
+  event.target.style.fontSize = '20px';
+}
+
+for(i of document.querySelectorAll('.day')){
+  i.addEventListener('mouseover', zoomIn);
+}
+
+for(i of document.querySelectorAll('.day')){
+  i.addEventListener('mouseout', zoomOut);
+}
