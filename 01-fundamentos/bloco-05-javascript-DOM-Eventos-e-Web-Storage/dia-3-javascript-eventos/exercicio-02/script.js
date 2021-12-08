@@ -68,9 +68,8 @@ let fridays = document.getElementsByClassName('friday');
 function clickButtonFriday(){
   for(i of fridays){
     if(i.innerText.includes('Friday')){
-      let toNumber = parseInt(i.innerText);
-      i.innerText = toNumber;
-    } else {
+      i.innerText = parseInt(i.innerText);
+    }else{
       i.innerText += ' Friday!';
     }
   }
