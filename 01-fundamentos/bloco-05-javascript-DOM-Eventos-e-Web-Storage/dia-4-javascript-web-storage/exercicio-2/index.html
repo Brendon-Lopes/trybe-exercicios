@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Leitor</title>
   </head>
   <body>
     <h1>Lorem ipsum dolor sit amet consectetur</h1>
-    <p>
+    <p id="paragraph">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac
       molestie eros. Vivamus quis quam odio. Phasellus eleifend vel purus eget
       mattis. Ut non magna nibh. Cras eu dignissim quam. Etiam tortor diam,
@@ -39,8 +40,24 @@
       Phasellus eget consectetur dolor. Mauris malesuada viverra augue ac
       posuere. Duis sem nisl, maximus vitae lectus eget, maximus ultricies eros.
       Fusce mollis, dolor eu rutrum mollis, elit odio hendrerit turpis, non
-      dignissim nunc libero id magna. <br><br>
+      dignissim nunc libero id magna. <br /><br />
     </p>
-    <button>Dark Mode</button>
+    <button id="dark-mode">Dark Mode</button>
+    <button id="text-color">Change Text Color</button>
+    <input type="number" placeholder="Font Size" id="font-size" />
+    <label for="line-spacing">&emsp;Line Spacing:</label>
+    <input
+      type="number"
+      placeholder="Line Spacing"
+      id="line-spacing"
+      step="0.5"
+      value="1"
+      min="1"
+    />
+    <select placeholder="Choose a font" id="change-font">
+      <option value="serif">Times New Roman</option>
+      <option value="sans-serif">Arial</option>
+
+    <script src="script.js"></script>
   </body>
 </html>
