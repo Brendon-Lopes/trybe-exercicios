@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <h1>Formulário</h1>
+    <form action="" method="get">
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+        <label for="name-input">Nome: </label>
+        <input
+          type="text"
+          name="name"
+          id="name-input"
+          maxlength="40"
+          required
+        /><br />
+        <label for="email-input">E-mail: </label>
+        <input
+          type="text"
+          name="email"
+          id="email-input"
+          maxlength="50"
+          required
+        /><br />
+        <label for="cpf-input">CPF: </label>
+        <input
+          type="text"
+          name="cpf"
+          id="cpf-input"
+          maxlength="11"
+          required
+        /><br />
+        <label for="address-input">Endereço: </label>
+        <input
+          type="text"
+          name="address"
+          id="address-input"
+          maxlength="200"
+          required
+        /><br />
+        <label for="city-input">Cidade: </label>
+        <input
+          type="text"
+          name="city"
+          id="city-input"
+          maxlength="28"
+          required
+        /><br />
+        <label for="state-input">Estado: </label>
+        <select name="state" id="state-input" required></select
+        ><br />
+        <label for="type"
+          >Tipo:
+          <input type="radio" name="type" id="type-house" required />
+          <label for="type-house">Casa</label>
+          <input type="radio" name="type" id="type-apartment" required />
+          <label for="type-apartment">Apartamento</label>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Dados do último emprego</legend>
+        <label for="curriculum-input">Resumo do Currículo</label>
+        <textarea name="curriculum" id="curriculum-input" cols="30" rows="10" maxlength="1000" required></textarea><br>
+        <label for="post">Cargo: </label>
+        <input type="text" name="post" id="psot-input" maxlength="40" required><br>
+        <label for="post-description-input">Descrição do cargo: </label>
+        <input type="text" name="post-description" id=" post-description-input" maxlength="500" required><br>
+        <label for="start-date-input">Data de início: </label>
+        <input type="text" name="start-date" id="start-date-input" required>
+      </fieldset>
+
+      <button type="submit" id="submit-button">Enviar</button>
+
+      <button id="clear">Limpar</button>
+
+      <script src="script.js"></script>
+    </form>
+  </body>
+</html>
