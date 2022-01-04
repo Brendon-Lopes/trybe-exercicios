@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Leitor</title>
+  </head>
+  <body>
+    <h1>Lorem ipsum dolor sit amet consectetur</h1>
+    <p id="paragraph">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac
+      molestie eros. Vivamus quis quam odio. Phasellus eleifend vel purus eget
+      mattis. Ut non magna nibh. Cras eu dignissim quam. Etiam tortor diam,
+      gravida eu ipsum non, lobortis iaculis velit. Morbi eget ex laoreet,
+      accumsan odio in, aliquam tortor. Pellentesque vel tortor euismod,
+      venenatis nisi id, vestibulum sem. Maecenas a facilisis est, nec tempor
+      sem. Maecenas tempor ligula nisi, nec pellentesque tortor molestie sed.
+      Nam purus elit, tristique a blandit nec, euismod vitae arcu. Aliquam augue
+      nibh, aliquam maximus ante non, eleifend efficitur enim. Quisque in purus
+      et lacus ultrices accumsan.<br /><br />
+      Praesent velit ante, condimentum congue tortor ac, egestas ultrices eros.
+      Aenean vel justo pretium, ultricies elit in, vehicula massa. Aliquam eu
+      pharetra sapien. Nam ac tempus risus. Proin luctus porta velit, at
+      pharetra nibh mollis vitae. Quisque malesuada feugiat efficitur. Mauris
+      vestibulum cursus dui pretium consequat. Cras id nisl lobortis, sodales
+      lectus vitae, elementum tortor. Nulla interdum ligula quis sapien gravida,
+      vitae ultricies tellus feugiat. Maecenas lobortis odio vitae laoreet
+      luctus. Ut pulvinar, purus in tristique pulvinar, leo turpis euismod
+      lectus, sagittis placerat libero nulla nec elit. Ut viverra accumsan
+      finibus. Etiam in arcu ac lacus imperdiet mollis a at eros. <br /><br />
+      Quisque nec tortor sed urna scelerisque venenatis. Nulla hendrerit
+      convallis lorem, sit amet gravida magna. Phasellus justo sapien, eleifend
+      sed dapibus non, pharetra at augue. Morbi lacinia consectetur mauris et
+      pulvinar. Nunc sit amet dapibus lectus. Nunc malesuada ligula libero, id
+      tincidunt erat consequat non. Sed blandit, dolor in pellentesque vehicula,
+      ligula velit luctus nibh, in lacinia sem est quis nisl. Curabitur congue
+      non quam vehicula facilisis. Cras semper purus quis urna commodo molestie.
+      Phasellus eget consectetur dolor. Mauris malesuada viverra augue ac
+      posuere. Duis sem nisl, maximus vitae lectus eget, maximus ultricies eros.
+      Fusce mollis, dolor eu rutrum mollis, elit odio hendrerit turpis, non
+      dignissim nunc libero id magna. <br /><br />
+    </p>
+    <button id="dark-mode">Dark Mode</button>
+    <button id="text-color">Change Text Color</button>
+    <input type="number" placeholder="Font Size" id="font-size" />
+    <label for="line-spacing">&emsp;Line Spacing:</label>
+    <input
+      type="number"
+      placeholder="Line Spacing"
+      id="line-spacing"
+      step="0.5"
+      value="1"
+      min="1"
+    />
+    <input list="fonts" placeholder="Choose a font" id="change-font">
+    <datalist id="fonts">
+      <option value="serif" class="change-font-class">Times New Roman</option>
+      <option value="sans-serif" class="change-font-class">Arial</option>
+    </datalist>
+
+    <script src="script.js"></script>
+  </body>
+</html>
