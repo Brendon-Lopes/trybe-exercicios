@@ -54,9 +54,11 @@
       value="1"
       min="1"
     />
-    <select placeholder="Choose a font" id="change-font">
-      <option value="serif">Times New Roman</option>
-      <option value="sans-serif">Arial</option>
+    <input list="fonts" placeholder="Choose a font" id="change-font">
+    <datalist id="fonts">
+      <option value="serif" class="change-font-class">Times New Roman</option>
+      <option value="sans-serif" class="change-font-class">Arial</option>
+    </datalist>
 
     <script src="script.js"></script>
   </body>
