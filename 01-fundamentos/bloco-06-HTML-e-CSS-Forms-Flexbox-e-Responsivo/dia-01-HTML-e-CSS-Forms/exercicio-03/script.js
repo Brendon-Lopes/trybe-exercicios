@@ -1,4 +1,6 @@
 const stateInput = document.getElementById('state-input');
+const submitBtn = document.getElementById('submit-button');
+const startDate = document.getElementById('start-date-input');
 
 const states = [
   { 'AC': 'Acre' },
@@ -36,3 +38,16 @@ for(const i of states) {
   createOption.setAttribute('value', Object.keys(i));
   stateInput.appendChild(createOption);
 }
+
+function dateValidation(input) {
+  let regex = /^\d\d\/\d\d\/\d\d\d\d$/;
+
+  if(!regex.test(input.value)) {
+    alert('Formato de data inválido');
+  }
+}
+
+submitBtn.addEventListener('click', (event) => {
+  event.preventDefault();
+  dateValidation(startDate);
+});
