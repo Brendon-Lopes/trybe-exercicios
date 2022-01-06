@@ -2,6 +2,18 @@ const stateInput = document.getElementById('state-input');
 const submitBtn = document.getElementById('submit-button');
 const startDate = document.getElementById('start-date-input');
 
+document.getElementById('start-date-input').DatePickerX.init({
+  format: 'dd/mm/yyyy',
+  mondayFirst: false,
+  weekDayLabels: ['Seg.', 'Ter.', 'Qua.', 'Qui.', 'Sex.', 'Sáb.', 'Dom.'],
+  shortMonthLabels: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'],
+  singleMonthLabels: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'],
+  todayButton      : true,
+  todayButtonLabel : 'Hoje',
+  clearButton      : true,
+  clearButtonLabel : 'Limpar'
+});
+
 const states = [
   { 'AC': 'Acre' },
   { 'AL': 'Alagoas' },
@@ -39,15 +51,15 @@ for(const i of states) {
   stateInput.appendChild(createOption);
 }
 
-function dateValidation(input) {
-  let regex = /^\d\d\/\d\d\/\d\d\d\d$/;
+// function dateValidation(input) {
+//   let regex = /^\d\d\/\d\d\/\d\d\d\d$/;
 
-  if(!regex.test(input.value)) {
-    alert('Formato de data inválido');
-  }
-}
+//   if(!regex.test(input.value)) {
+//     alert('Formato de data inválido');
+//   }
+// }
 
 submitBtn.addEventListener('click', (event) => {
   event.preventDefault();
-  dateValidation(startDate);
+  // dateValidation(startDate);
 });
