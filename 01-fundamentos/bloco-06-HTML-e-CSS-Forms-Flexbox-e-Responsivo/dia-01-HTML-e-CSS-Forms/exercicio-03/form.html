@@ -75,12 +75,18 @@
           <select name="state" id="state-input" required></select>
         </div>
       </div>
-      <div class="field">
+      <div class="field control">
         <label class="label" for="type">Tipo:</label>
+
+        <label class="radio" for="type-house">
         <input type="radio" name="type" id="type-house" required/>
-        <label for="type-house">Casa</label>
+        Casa
+        </label>
+
+        <label class="radio" for="type-apartment">
         <input type="radio" name="type" id="type-apartment" required/>
-        <label for="type-apartment">Apartamento</label>
+        Apartamento
+        </label>
       </div>
 
       <p class="title is-5">Dados do último emprego</p>
@@ -102,7 +108,7 @@
           class="input"
           type="text"
           name="post"
-          id="psot-input"
+          id="post-input"
           maxlength="40"
           required
         />
