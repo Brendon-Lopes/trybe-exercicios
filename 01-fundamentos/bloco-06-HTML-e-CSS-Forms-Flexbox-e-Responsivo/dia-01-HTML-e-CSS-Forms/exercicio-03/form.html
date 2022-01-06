@@ -1,141 +1,100 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-    <link rel="stylesheet" href="DatePickerX-master/dist/css/DatePickerX.min.css">
-    <link rel="stylesheet" href="style.css">
-    <title>Form</title>
-  </head>
-  <body>
-    <main class="container">
-      <h1 class="title is-2 has-text-centered">Formulário</h1>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="DatePickerX-master/dist/css/DatePickerX.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Form</title>
+</head>
+
+<body>
+  <main class="container">
+    <h1 class="title is-2 has-text-centered">Formulário</h1>
+
     <form action="" method="get">
       <p class="title is-5">Dados Pessoais</p>
+
       <div class="field">
         <label class="label" for="name-input">Nome: </label>
-        <input
-          class="input"
-          type="text"
-          name="name"
-          id="name-input"
-          maxlength="40"
-          required
-        />
+        <input class="input" type="text" name="name" id="name-input" maxlength="40" required />
       </div>
+
       <div class="field">
         <label class="label" for="email-input">E-mail: </label>
-        <input
-          class="input"
-          type="text"
-          name="email"
-          id="email-input"
-          maxlength="50"
-          required
-        />
+        <input class="input" type="text" name="email" id="email-input" maxlength="50" required />
       </div>
+
       <div class="field">
         <label class="label" for="cpf-input">CPF: </label>
-        <input
-          class="input"
-          type="text"
-          name="cpf"
-          id="cpf-input"
-          maxlength="11"
-          required
-        />
+        <input class="input" type="text" name="cpf" id="cpf-input" maxlength="11" required />
       </div>
+
       <div class="field">
         <label class="label" for="address-input">Endereço: </label>
-        <input
-          class="input"
-          type="text"
-          name="address"
-          id="address-input"
-          maxlength="200"
-          required
-        />
+        <input class="input" type="text" name="address" id="address-input" maxlength="200" required />
       </div>
+
       <div class="field">
         <label class="label" for="city-input">Cidade: </label>
-        <input
-          class="input"
-          type="text"
-          name="city"
-          id="city-input"
-          maxlength="28"
-          required
-        />
+        <input class="input" type="text" name="city" id="city-input" maxlength="28" required />
       </div>
+
       <div class="field">
         <label class="label" for="state-input">Estado: </label>
         <div class="select">
           <select name="state" id="state-input" required></select>
         </div>
       </div>
+
       <div class="field control">
         <label class="label" for="type">Tipo:</label>
 
         <label class="radio" for="type-house">
-        <input type="radio" name="type" id="type-house" required/>
-        Casa
+          <input type="radio" name="type" id="type-house" required />
+          Casa
         </label>
 
         <label class="radio" for="type-apartment">
-        <input type="radio" name="type" id="type-apartment" required/>
-        Apartamento
+          <input type="radio" name="type" id="type-apartment" required />
+          Apartamento
         </label>
       </div>
 
       <p class="title is-5">Dados do último emprego</p>
+
       <div class="field">
         <label class="label" for="curriculum-input">Resumo do Currículo</label>
-        <textarea
-          class="textarea"
-          name="curriculum"
-          id="curriculum-input"
-          cols="30"
-          rows="10"
-          maxlength="1000"
-          required
-        ></textarea>
+        <textarea class="textarea" name="curriculum" id="curriculum-input" cols="30" rows="10" maxlength="1000"
+          required></textarea>
       </div>
+
       <div class="field">
         <label class="label" for="post">Cargo: </label>
-        <input
-          class="input"
-          type="text"
-          name="post"
-          id="post-input"
-          maxlength="40"
-          required
-        />
+        <input class="input" type="text" name="post" id="post-input" maxlength="40" required />
       </div>
+
       <div class="field">
         <label class="label" for="post-description-input">Descrição do cargo: </label>
-        <input
-          class="input"
-          type="text"
-          name="post-description"
-          id=" post-description-input"
-          maxlength="500"
-          required
-        />
+        <input class="input" type="text" name="post-description" id=" post-description-input" maxlength="500"
+          required />
       </div>
+
       <div class="field">
         <label class="label" for="start-date-input">Data de início: </label>
         <input class="input" type="text" name="start-date" id="start-date-input" required />
       </div>
-      
 
       <button class="button is-success" type="submit" id="submit-button">Enviar</button>
 
       <button class="button is-danger" id="clear" type="reset">Limpar</button>
-    </main>
-      <script src="/DatePickerX-master/dist/js/DatePickerX.min.js"></script>
-      <script src="script.js"></script>
-    </form>
-  </body>
+  </main>
+  <script src="/DatePickerX-master/dist/js/DatePickerX.min.js"></script>
+  <script src="script.js"></script>
+  </form>
+</body>
+
 </html>
