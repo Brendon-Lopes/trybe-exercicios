@@ -13,4 +13,16 @@ const fatorial = num => {
   console.log(multiplied);
 }
 
-fatorial(1);
+const longestWord = str => {
+  let strToArr = str.split(' ');
+  let longest = '';
+  
+  for (const i of strToArr) {
+    if (i.length > longest.length) {
+      longest = i;
+    }
+  }
+  console.log(longest);
+}
+
+longestWord('Antônio foi no banheiro e não sabemos o que aconteceu');
