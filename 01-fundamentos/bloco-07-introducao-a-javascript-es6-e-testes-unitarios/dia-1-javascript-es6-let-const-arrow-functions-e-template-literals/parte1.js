@@ -1,26 +1,29 @@
-// function testingScope(escopo) {
-//   if (escopo === true) {
-//     let ifScope = 'Não devo ser utilizada fora do meu escopo (if)';
-//     ifScope = ifScope + ' ótimo, fui utilizada no escopo !';
+// parte 1.1
+
+// const testingScope = escopo => {
+//   if (escopo) {
+//     let ifScope = `Não devo ser utilizada fora do meu escopo (if)`;
+//     ifScope = `${ifScope} ótimo, fui utilizada no escopo !`;
 //     console.log(ifScope);
 //   } else {
-//     let elseScope = 'Não devo ser utilizada fora meu escopo (else)';
+//     let elseScope = `Não devo ser utilizada fora do meu escopo (else)`;
 //     console.log(elseScope);
 //   }
-//   console.log(ifScope + ' o que estou fazendo aqui ? :O'); // Se necessário esta linha pode ser removida.
 // }
 
-// testingScope(true);
+// testingScope(false);
 
-const testingScope = escopo => {
-  if (escopo) {
-    let ifScope = `Não devo ser utilizada fora do meu escopo (if)`;
-    ifScope = `${ifScope} ótimo, fui utilizada no escopo !`;
-    console.log(ifScope);
-  } else {
-    let elseScope = `Não devo ser utilizada fora do meu escopo (else)`;
-    console.log(elseScope);
+const oddsAndEvens = [13, 3, 4, 10, 7, 2];
+
+const sortArray = arr => {
+  for (let i = arr.length - 1; i > 0; i -= 1) {
+    for (let j = 0; j < i; j += 1) {
+      if (arr[j] > arr[j+1]) {
+        [arr[j], arr[j+1]] = [arr[j+1], arr[j]];
+      }
+    }
   }
+  console.log(arr);
 }
 
-testingScope(false);
+sortArray(oddsAndEvens);
