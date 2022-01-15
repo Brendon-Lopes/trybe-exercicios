@@ -6,11 +6,7 @@ function hydrate(str) {
   numbersArray.forEach((element) => {
     realNumbers.push(parseInt(element));
   });
-  
-  // for(let number of realNumbers){
-  //   sum += number;
-  // }
-
+ 
   realNumbers.forEach((element) => {
     sum += element;
   });
