@@ -61,14 +61,8 @@ const books = [
   },
 ];
 
-function smallerName() {
-  let nameBook = books[0].name;
-
-  books.forEach((element) => {
-    if(element.name.length < nameBook.length) nameBook = element.name;
-  });
-
-  return nameBook;
+function getNamedBook() {
+  return books.find((book) => book.name.length === 26);
 }
 
-console.log(smallerName());
+console.log(getNamedBook());
