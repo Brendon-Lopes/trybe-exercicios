@@ -60,3 +60,11 @@ const books = [
     releaseYear: 1928,
   },
 ];
+
+function booksOrderedByReleaseYearDesc() {
+  books.sort((a, b) => b.releaseYear - a.releaseYear);
+}
+
+booksOrderedByReleaseYearDesc();
+
+console.log(books);
