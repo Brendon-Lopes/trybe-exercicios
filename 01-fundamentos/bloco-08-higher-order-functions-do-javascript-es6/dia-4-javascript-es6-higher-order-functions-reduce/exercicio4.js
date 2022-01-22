@@ -62,9 +62,7 @@ const books = [
 ];
 
 function longestNamedBook() {
-  return books.reduce((acc, curr, index) => {
-    return acc.name.length > curr.name.length ? acc : curr;
-  });
+  return books.reduce((acc, curr) => acc.name.length > curr.name.length ? acc : curr);
 }
 
 console.log(longestNamedBook());
