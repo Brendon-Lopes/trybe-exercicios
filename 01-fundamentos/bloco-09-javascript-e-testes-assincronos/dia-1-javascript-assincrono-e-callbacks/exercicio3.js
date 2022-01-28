@@ -6,9 +6,10 @@ const getPlanet = () => {
       measurementUnit: "kilometers",
     },
   };
-  console.log("Returned planet: ", mars);
+  setTimeout(() => {
+    console.log("Returned planet: ", mars);
+  }, 4000);
+  
 };
 
-setTimeout(() => {
-  getPlanet();
-}, 4000);
+getPlanet();
