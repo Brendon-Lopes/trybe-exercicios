@@ -33,6 +33,7 @@ const fetchCrypto = async () => {
     append(data);
   } catch (error) {
     console.log(error.message);
+    alert('Erro buscando os valores, recarregue a página');
   }
 };
 
