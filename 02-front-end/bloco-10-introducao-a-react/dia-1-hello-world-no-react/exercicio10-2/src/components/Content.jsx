@@ -27,7 +27,7 @@ class Content extends Component {
 
     return (
       conteudos.map(({ conteudo, bloco, status}) =>
-      <div key={ conteudo } className="section">
+      <div key={ conteudo } className="card">
         <div>O conteúdo é: {conteudo}</div>
         <div>Status: {status}</div>
         <div>Bloco: {bloco}</div>
