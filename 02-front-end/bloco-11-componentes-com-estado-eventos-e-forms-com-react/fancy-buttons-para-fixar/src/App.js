@@ -14,24 +14,26 @@ class App extends React.Component {
     this.setState((prevState, _props) => ({
       numCliques: prevState.numCliques + 1
     }));
-    if(this.state.numCliques % 2 === 0) {
-
-    }
   };
+
   botao2 = () => console.log(this, 'Botão 2'); // arrow function não precisa de bind, mas é menos performática.
+
+  changeBtnColor(num) {
+    return num % 2 === 0 ? 'green' : 'initial';
+  }
 
   render() {
     return (
       <div>
         <button
         onClick={this.botao1}
-        style={{backgroundColor: this.state.numCliques % 2 === 0 ? 'green' : 'initial'}}
-        >{this.state.numCliques}
+        style={{backgroundColor: this.changeBtnColor(this.state.numCliques)}}
+        > Botão 1 | count = {this.state.numCliques}
         </button>
 
         {/* <button onClick={ () => this.botao1('parâmetros') }>{this.state.numCliques}</button>
         ^ forma de chamar uma função com parâmetros no evento onClick */ }
-        
+
         <button onClick={this.botao2}>Botão 2</button>
       </div>
     )
