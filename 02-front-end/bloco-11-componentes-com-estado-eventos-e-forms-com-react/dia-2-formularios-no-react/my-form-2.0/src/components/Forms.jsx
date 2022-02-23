@@ -18,7 +18,6 @@ class Forms extends Component {
 
   handleInputs({ target }) {
     const { name, value } = target;
-    if(name === 'nome') value.toUpperCase();
     this.setState({ [name]: value });
   }
 
