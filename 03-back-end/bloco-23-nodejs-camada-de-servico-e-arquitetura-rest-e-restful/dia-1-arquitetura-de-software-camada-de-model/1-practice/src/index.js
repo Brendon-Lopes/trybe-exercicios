@@ -5,6 +5,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 const Book = require('./models/Book');
+const { validateBook } = require('./services/Book');
 const Author = require('./models/Author');
 
 app.use(express.json());
@@ -30,7 +31,7 @@ app.get('/books/:id', async (req, res) => {
 app.post('/books', async (req, res) => {
   const { title, author_id } = req.body;
 
-  const validate = await Book.validateBook(title, author_id);
+  const validate = await validateBook(title, author_id);
 
   if (!validate) return res.status(400).json({ message: 'Dados inválidos' });
 

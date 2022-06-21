@@ -24,17 +24,6 @@ const getByBookId = async (id) => {
   return book;
 }
 
-const validateBook = async (title, authorId) => {
-  const ids = await Author.getAllIds();
-
-  const isIdValid = ids.some(({ id }) => id === Number(authorId));
-
-  if (!title || title.length < 3) return false;
-  if (!authorId || !isIdValid) return false;
-
-  return true;
-}
-
 const create = async (title, author_id) => {
   const query = 'INSERT INTO model_example.books (title, author_id) VALUES (?, ?)'
   await connection.execute(query, [title, author_id]);
@@ -44,6 +33,5 @@ module.exports = {
   getAll,
   getByAuthorId,
   getByBookId,
-  validateBook,
   create,
 }
