@@ -3,14 +3,10 @@ const cepRouter = express.Router();
 
 const Cep = require('../controllers/Cep');
 
-const { validateCepNumber, validateSentCep } = require('../middlewares');
+const { validateCepNumber, validateSentData } = require('../middlewares');
 
 cepRouter.get('/:cep', validateCepNumber, Cep.getByCep);
 
-cepRouter.post(
-  '/',
-  validateSentCep,
-  Cep.registerNewCep,
-);
+cepRouter.post('/', validateSentData, Cep.registerNewCep);
 
 module.exports = cepRouter;

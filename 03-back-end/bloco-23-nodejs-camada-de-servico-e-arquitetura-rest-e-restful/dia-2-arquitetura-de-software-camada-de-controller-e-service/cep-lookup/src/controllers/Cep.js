@@ -7,8 +7,8 @@ const getByCep = async (req, res) => {
     const address = await Cep.getByCep(cepNumber);
 
     return res.status(200).json(address);
-  } catch (error) {
-    return res.status(404).json({ error: { code: 'invalidData', message: error.message }});
+  } catch ({ errorStatus, code, message }) {
+    return res.status(errorStatus).json({ error: { code, message } });
   }
 };
 
@@ -21,8 +21,8 @@ const registerNewCep = async (req, res) => {
     await Cep.registerNewCep(data);
 
     return res.status(201).json(data);
-  } catch (error) {
-    console.log(error);
+  } catch ({ errorStatus, code, message}) {
+    return res.status(errorStatus).json({ error: { code, message } });
   }
 }
 

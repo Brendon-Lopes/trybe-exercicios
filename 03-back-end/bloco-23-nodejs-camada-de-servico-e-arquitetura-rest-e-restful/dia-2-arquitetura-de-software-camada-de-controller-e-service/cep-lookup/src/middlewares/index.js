@@ -1,7 +1,7 @@
 const validateCepNumber = require('./validateCepNumber');
-const validateSentCep = require('./validateSentCep');
+const validateSentData = require('./validateSentData');
 
 module.exports = {
   validateCepNumber,
-  validateSentCep,
+  validateSentData,
 };
