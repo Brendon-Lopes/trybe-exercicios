@@ -12,4 +12,4 @@ const fetchByCep = async (cep) => {
 
 module.exports = {
   fetchByCep,
-}
+};
