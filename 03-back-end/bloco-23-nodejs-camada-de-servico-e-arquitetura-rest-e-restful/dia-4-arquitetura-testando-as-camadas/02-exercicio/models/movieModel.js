@@ -19,12 +19,7 @@ const getById = async (id) => {
       [id],
     );
 
-  return {
-    id: result.id,
-    title: result.title,
-    directedBy: result.directed_by,
-    releaseYear: result.release_year,
-  };
+  return result;
 };
 
 module.exports = {

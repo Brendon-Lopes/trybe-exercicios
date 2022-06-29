@@ -38,18 +38,18 @@ describe('Insere um novo filme no BD', () => {
 });
 
 describe('Busca por um filme por ID', () => {
-  const exampleMovie = [{
+  const exampleMovie = [[{
     id: 1,
     title: 'Example Movie',
     directed_by: 'Jane Dow',
     release_year: 1999,
-  }];
+  }]];
 
   const exampleReturnedMovie = {
     id: 1,
     title: 'Example Movie',
-    directedBy: 'Jane Dow',
-    releaseYear: 1999,
+    directed_by: 'Jane Dow',
+    release_year: 1999,
   };
 
   const MOVIE_ID = 1;
@@ -65,13 +65,13 @@ describe('Busca por um filme por ID', () => {
   describe('quando o ID existe', () => {
 
     it('retorna um objeto', async () => {
-      const response = await MoviesModel.getById(MOVIE_ID);
+      const [response] = await MoviesModel.getById(MOVIE_ID);
 
       expect(response).to.be.a('object');
     });
 
     it('o objeto contém as informações corretas do filme', async () => {
-      const response = await MoviesModel.getById(MOVIE_ID);
+      const [response] = await MoviesModel.getById(MOVIE_ID);
 
       expect(response).to.deep.equal(exampleReturnedMovie);
     });
