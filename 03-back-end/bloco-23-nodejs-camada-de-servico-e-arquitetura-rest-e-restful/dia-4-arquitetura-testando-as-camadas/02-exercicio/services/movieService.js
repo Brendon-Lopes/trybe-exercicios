@@ -34,13 +34,13 @@ const getById = async (id) => {
 
   const [result] = await MoviesModel.getById(id);
 
-  if (result.id === undefined) return false;
+  if (!result) return false;
 
   return {
     id: result.id,
     title: result.title,
-    directedBy: result.directedBy,
-    releaseYear: result.releaseYear,
+    directedBy: result.directed_by,
+    releaseYear: result.release_year,
   };
 };
 

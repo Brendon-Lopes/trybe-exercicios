@@ -74,15 +74,22 @@ describe('Busca um filme por ID', () => {
   describe('Quando o id informado é válido', async () => {
     const MOVIE_ID = 1;
 
-    const exampleReturnedMovie = [{
+    const movieReturnedFromModel = [{
+      id: 1,
+      title: 'Example Movie',
+      directed_by: 'Jane Dow',
+      release_year: 1999,
+    }];
+
+    const movieReturnedFromService = {
       id: 1,
       title: 'Example Movie',
       directedBy: 'Jane Dow',
       releaseYear: 1999,
-    }];
+    };
 
     before(() => {
-      sinon.stub(MoviesModel, 'getById').resolves(exampleReturnedMovie);
+      sinon.stub(MoviesModel, 'getById').resolves(movieReturnedFromModel);
     });
 
     after(() => {
@@ -98,7 +105,7 @@ describe('Busca um filme por ID', () => {
     it('o objeto contém as informações do filme', async () => {
       const response = await MoviesService.getById(MOVIE_ID);
 
-      expect([response]).to.deep.equal(exampleReturnedMovie);
+      expect(response).to.deep.equal(movieReturnedFromService);
     });
   });
 });
