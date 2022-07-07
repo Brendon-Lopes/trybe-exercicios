@@ -20,8 +20,38 @@ const create = async ({ title, author, pageQuantity }) => {
   return book;
 };
 
+const update = async ({ id, title, author, pageQuantity }) => {
+  const find = await getById(id);
+
+  console.log(find);
+
+  if (!find) return false;
+
+  const book = await Book.update({ title, author, pageQuantity }, {
+    where: {
+      id,
+    }
+  });
+
+  console.log('pra cá não');
+
+  return book;
+};
+
+const remove = async (id) => {
+  const find = await getById(id);
+
+  if (!find) return false;
+
+  await Book.destroy({ where: { id } });
+
+  return true;
+};
+
 module.exports = {
   getAll,
   getById,
   create,
+  update,
+  remove,
 };
