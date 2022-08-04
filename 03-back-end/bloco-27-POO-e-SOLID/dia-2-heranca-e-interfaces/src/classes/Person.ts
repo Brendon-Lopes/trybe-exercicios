@@ -1,9 +1,7 @@
 class Person {
-  private _name: string;
-  private _birthDate: Date;
-  constructor(name: string, birthDate: Date) {
-    this._name = name;
-    this._birthDate = birthDate;
+  constructor(private _name: string, private _birthDate: Date) {
+    this.name = _name;
+    this.birthDate = _birthDate;
   }
 
   get name(): string {
